@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Ranya Coffee</title>
+    <link rel="stylesheet" href="styles/cart-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="checkout-header">
+        <div class="header-content">
+            <a href="menu.html" class="amazon-logo">
+                Ranya<span>Coffee</span>
+            </a>
+            <div class="checkout-title">
+                Checkout (<span id="total-qty-top">0 items</span>)
+            </div>
+            <div class="lock-icon">
+                <i class="fas fa-lock"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="page-title">Review your order</div>
+        
+        <div class="checkout-grid">
+            <!-- Left Side: Order Items -->
+            <div class="checkout-left js-order-summary">
+                <!-- Injected by orderSummary.js -->
+            </div>
+
+            <!-- Right Side: Totals -->
+            <aside class="checkout-right js-payment-summary">
+                <!-- Injected by paymentSummary.js -->
+            </aside>
+        </div>
+    </main>
+
+    <script type="module" src="scripts/checkout.js"></script>
+</body>
+</html>
